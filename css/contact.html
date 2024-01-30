@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="pizzaslice.png">
+    <title>Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="orangeBrick"></div>
+    <div id="lightOrangeBrick"></div>
+    <img src="pizzaslice.png" alt="error" id="pizzaSlice">
+    <p id="pizzaPlace">Pizza Place</p>
+    <a href="index.html">
+        <div id=homeLink>Home</div>
+    </a>
+    <a href="menu.html">
+        <div id=menuLink>Menu</div>
+    </a>
+    <a href="contact.html">
+        <div id=contactLink>Contact</div>
+    </a>
+    <a href="order.html">
+        <div id=orderLink>Order</div>
+    </a>
+    <form>
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Medlemskap för online FoodShop:</label>
+        <label for="member-yes">
+            <input type="radio" id="member-yes" name="membership" value="yes"> Ja
+        </label>
+        <label for="member-no">
+            <input type="radio" id="member-no" name="membership" value="no" checked> Nej
+        </label>
+
+        <button type="submit">Skicka</button>
+        <button type="reset">Återställ</button>
+    </form>
+    <div class="bottomBanner">pizzaplace@gmail.com | 070-111-222-333</div>
+
+
+
+
+</body>
+
+</html>

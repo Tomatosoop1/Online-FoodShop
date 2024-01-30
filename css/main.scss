@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+}
+body {
+    background-image: url("pizzawallpaper.png");
+    background-size: 25%, 25%; 
+    background-repeat: repeat;
+    width: 100%;
+    height: 200%;
+  } 
+#orangeBrick {
+    background-color: rgb(164,62,30);
+    width: 105vh;
+    height: 300vh;
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+#lightOrangeBrick{
+    background-color: rgb(166, 79, 53);
+    width: 105vh;
+    height: 20vh;
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#yellowBlock{
+    background-color: rgb(203, 145, 36);
+    width: 70vh;
+    height: 20vh;
+    position: absolute;
+    margin-top: 22vh;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.7vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+#pizzaMan{
+    background-color: rgb(203, 145, 36);
+    width:70vh;
+    position: absolute;
+    margin-top: 25vh;
+    left: 50%; 
+    top:45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#pizzaSlice{
+    width:13vh;
+    position: absolute;
+    left: 29%; 
+    top:5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#pizzaPlace{
+    width: 70vh;
+    height: 20vh;
+    position: absolute;
+    margin-top: 11vh;
+    left: 40.5%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 6vh;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#homeLink{
+    position: absolute;
+    margin-top: 5vh;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.5vh;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#menuLink{
+    position: absolute;
+    margin-top: 5vh;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.5vh;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+#contactLink{
+    position: absolute;
+    margin-top: 5vh;
+    left: 64%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.5vh;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+#orderLink{
+    position: absolute;
+    margin-top: 5vh;
+    left: 70.5%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.5vh;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+.menuItem{
+    color: black;
+    height: 20vh;
+    width: 20vh;
+}
+
+
+
+//Stylar formen
+form {
+    background-color: #df7a26;
+    padding: 2vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+//Grid container
+.grid-container {
+    display: grid;
+}
+
+//Stylar blocken runt pizza rutorna
+#greyBlock1,
+#greyBlock2,
+#greyBlock3 {
+    width: 70vh;
+    height: 30vh;
+    background-color: rgb(217, 204, 204);
+    position: relative;
+    margin-top: 10vh; 
+    margin-left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: left;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+    border-radius: 20px;
+}
+
+//Sätter positionen av add to cart texten
+.add-to-cart {
+    margin-top: -20vh;
+}
+
+//Storlek på bild
+.pizzaImg {
+    width: 28vh;
+    margin-left: 32vh;
+    margin-top: -7.5vh;
+    align-self: flex-end;
+}
+
+//Fixar hover funktionen så oppaciteten ändras när man hoverar den
+#greyBlock1:hover {
+    opacity: 0.7;
+}
+#greyBlock2:hover {
+    opacity: 0.7; 
+}
+#greyBlock3:hover {
+    opacity: 0.7; 
+}
+
+
+.bottomBanner{
+    //Svart banner i botten av sidan med mail och telefonnummer
+    background-color: grey;
+    width: 105vh;
+    height: 10vh;
+    position: absolute;
+    left: 50%; 
+    bottom: -60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4vh;
+}
+
+.infoLink{
+    //Ändrar färgen på länken från lila till svart och tar bort understräcket
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+.OrderTotal{
+    //Ändrar färg och storlek på Order Total på order sidan
+    background-color: rgb(217, 204, 204); 
+    width: 70vh;
+    height: 15vh;
+    position: absolute;
+    left: 50%; 
+    bottom:-20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.7vh;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 20px;
+
+}
+
+.cardDetails{
+    //Ändrar färg och storlek på card Details på order sidan
+    background-color: rgb(217, 204, 204); 
+    width: 70vh;
+    height: 10vh;
+    position: absolute;
+    left: 50%; 
+    bottom: -30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.7vh;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 20px;
+
+}
+
+.placeOrder{
+    //Ändrar färg och storlek på place order på order sidan
+    background-color: rgb(217, 204, 204); 
+    width: 70vh;
+    height: 10vh;
+    position: absolute;
+    left: 50%; 
+    bottom: -43%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.7vh;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
